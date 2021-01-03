@@ -1,0 +1,55 @@
+@import "config";
+
+.header {
+  & {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $primary-color;
+    color: $text-color;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div {
+    display: flex;
+    padding-left: 10px;
+  }
+
+  .icons {
+    & {
+      display: flex;
+      align-items: center;
+      padding-right: 10px;
+    }
+    div {
+      margin-right: 30px;
+    }
+    a {
+      & {
+        text-decoration: none;
+        color: $text-color;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    .volcano,
+    .fireAlarm,
+    .gitHub {
+      font-size: 3em;
+      cursor: pointer;
+
+      &:hover {
+        color: $secondary-color;
+      }
+
+      &Clicked {
+        font-size: 3em;
+        color: $secondary-color;
+      }
+    }
+  }
+}
